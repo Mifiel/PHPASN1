@@ -12,7 +12,7 @@ namespace FG\ASN1\Universal;
 
 use FG\ASN1\Identifier;
 
-class Enumerated extends Integer
+class Enumerated extends ASNInteger
 {
     public function getType()
     {

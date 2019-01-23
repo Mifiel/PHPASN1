@@ -15,7 +15,7 @@ use FG\ASN1\Universal\BitString;
 use FG\ASN1\Universal\Boolean;
 use FG\ASN1\Universal\Enumerated;
 use FG\ASN1\Universal\GeneralizedTime;
-use FG\ASN1\Universal\Integer;
+use FG\ASN1\Universal\ASNInteger;
 use FG\ASN1\Universal\NullObject;
 use FG\ASN1\Universal\ObjectIdentifier;
 use FG\ASN1\Universal\RelativeObjectIdentifier;
@@ -220,7 +220,7 @@ abstract class Object implements Parsable
             case Identifier::ENUMERATED:
                 return Enumerated::fromBinary($binaryData, $offsetIndex);
             case Identifier::INTEGER:
-                return Integer::fromBinary($binaryData, $offsetIndex);
+                return ASNInteger::fromBinary($binaryData, $offsetIndex);
             case Identifier::NULL:
                 return NullObject::fromBinary($binaryData, $offsetIndex);
             case Identifier::OBJECT_IDENTIFIER:

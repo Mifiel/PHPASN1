@@ -16,7 +16,7 @@ use FG\ASN1\Exception\ParserException;
 use FG\ASN1\Parsable;
 use FG\ASN1\Identifier;
 
-class Integer extends Object implements Parsable
+class ASNInteger extends Object implements Parsable
 {
     /** @var int */
     private $value;
